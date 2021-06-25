@@ -9,28 +9,25 @@ public class PlanoCartesiano {
         this.x = x;
         this.y = y;
     }
-public void setArriba(){
-    int valor = 0;
-    y+=valor;
-}   
-public void setAbajo(){
-    int valor = 0;
-    y-=valor;
-}
-public void setDerecha(){
-    int valor = 0;
-    x+=valor;
-}
-public void setIzquierda(){
-    int valor = 0;
-    x-=valor;
-}
-    public int getX() {
+    public int getx() {
         return x;
     }
 
-    public int getY() {
+    public void setx(int x) {
+        this.x = x;
+    }
+
+    public int gety() {
         return y;
+    }
+
+    public void sety(int y) {
+        this.y = y;
+    }
+
+    @Override
+    public String toString(){
+        return "X = " + this.x + "   " + "Y = " + this.y;
     }
 
 }
